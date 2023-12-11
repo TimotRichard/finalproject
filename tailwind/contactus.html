@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="id-ID" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>Aggreko | Aggreko ID</title>
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" href="css/main-sm.css" media="screen and (min-width: 576px)">
+<link rel="stylesheet" href="css/main-md.css" media="screen and (min-width: 768px)">
+<link rel="stylesheet" href="css/main-lg.css" media="screen and (min-width: 992px)">
+<link rel="stylesheet" href="css/main-xl.css" media="screen and (min-width: 1200px)">
+
+</head>
+
+<header data-event-layer="menuNavigation">
+    
+
+    <div class="header--utility">
+        <div class="header--wrap">
+            <nav class="header--utility-links" aria-label="Navigasi Utilitas">
+                <ul>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Privacy">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header--utility-switcher" aria-label="Ganti bahasa">
+                <ul>
+                    <li>
+                        <a href="#" class="header--utility-switcher-location" title="Bahasa &amp; Lokasi">IDN</a>                        
+                    </li>
+                    <li>
+                        <span>Indonesia (Indonesia)</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="component-fluid header--main" tabindex="-1" data-component="header-main">
+        <span class="mobileFlag"></span>
+        <div class="header--wrap">
+
+            <nav class="header--logo" aria-label="Navigasi halaman utama">
+                <a href="#" aria-label="Aggreko"></a>            
+            </nav>
+            <button type="button" class="header--nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="header-main-flyout"><span><span></span></span></button>
+
+            
+            <button type="button" class="header--search-form-toggle" aria-label="Tutup" aria-hidden="true" aria-expanded="false" aria-controls="header-main-search-form"><span><span></span></span></button>
+
+            
+            <div id="header-main-flyout" class="header--flyout" aria-hidden="true">
+                    <div class="header--nav">
+                        <nav class="header--nav-main" aria-label="Navigasi utama">
+                            <ul class="header--nav-top" data-event-key="menuPrimary">
+                                <li class="" data-event-value="Produkte">
+                                    <a href="index.html" title="Biodata">
+                                        <span>Home</span>
+                                    </a>                           
+                            </ul>
+                                    <a href="biodata.html" title="Biodata">
+                                        <span>Biodata</span>
+                                    </a>
+                                    <a href="contactus.html" title="Contact Us">                                                
+                                    <span>Contact Us</span>
+                                    </a>                                                                                            
+                                    <a href="CV - Timothy Richard.pdf" title="Download CV">                                                
+                                        <span>Download CV</span>
+                                    </a>
+                                    <a href="https://fti.unai.edu/" title="Download CV">                                                
+                                        <span>FTI UNAI</span>
+                                    </a>
+                                    <a href="https://unai.edu/" title="Download CV">                                                
+                                        <span>UNAI</span>
+                                    </a>                         
+                        </nav>
+                    </div>
+                <div class="header--search">
+                    
+                    <button type="button" class="header--search-toggle" aria-label="Cari " aria-expanded="false" aria-controls="header-main-search-form"><span class="ico"><span>
+                    </span></span> <span class="label">Cari </span></button>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: antiquewhite;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding-top: 50%;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<body>  
+  <form action="process.php" method="post">
+  <form id="contactForm">
+    <label for="fullName">Name</label>
+    <input type="text" id="fullName" name="Full Name" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="E-mail" required>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required></textarea>
+    <br>
+    <button type="button" onclick="validateForm()">Submit</button>
+  </form>
+  <script>
+  function validateForm() {
+    
+    let fullName = document.forms["contactForm"]["fullName"].value;
+    let email = document.forms["contactForm"]["email"].value;
+    let address = document.forms["contactForm"]["address"].value;
+    let hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+
+    
+    if (fullName === "") {
+      alert("Name must be filled out");
+      return false;
+    }
+
+    if (email === "") {
+      alert("E-mail must be filled out");
+      return false;
+    }
+
+    if (username === "") {
+      alert("Username must be filled out");
+      return false;
+    }
+
+    if (password === "") {
+      alert("Password must be filled out");
+      return false;
+    }
+
+    if (gender === null) {
+      alert("Gender must be filled out");
+      return false;
+    }
+
+    if (religion === "") {
+      alert("Religion must be filled out");
+      return false;
+    }
+
+    if (address === "") {
+      alert("Address harus diisi");
+      return false;
+    }
+
+    if (hobbies.length === 0) {
+      alert("Choose at least one hobby");
+      return false;
+    }
+
+    alert("Formulir berhasil disubmit!");
+    return true;
+  }
+</script>
+<footer class="component-fluid" data-event-layer="footerNavigation">
+  <div class="container footer--main">
+      <div class="footer--logo">
+              <a href="#" aria-label="Aggreko"><span class="aggreko-logo"></span></a>
+      </div>
+
+      <div class="footer--epilog">
+          <div class="editorContent">
+              <p>Kami percaya listrik membuka kesempatan dan menciptakan potensi bagi individu, komunitas, industri, perekonomian, dan masyarakat di seluruh dunia.</p>
+          </div>
+      </div>
+
+      <div class="footer--row">
+          <div class="footer--switcher">
+              <ul data-event-key="footerSelected">
+                  <li>
+                          <a href="#" class="footer--switcher-location">IDN</a>
+                  </li>
+                  <li>
+                      <span class="footer--switcher-language">Indonesia (Indonesia)</span>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="footer--links">
+              <ul data-event-key="footerSelected">
+                          <li data-event-value="Produkte">
+          <a href="#" title="Produk">Produk</a>
+      </li>
+      <li data-event-value="Generators">
+          <a href="#" title="Penyewaan &amp; Solusi Pembangkit Listrik">Penyewaan &amp; Solusi Pembangkit Listrik</a>
+      </li>
+      <li>
+          <a href="#" title="Penyewaan Sistem Pendinginan Industri">Penyewaan Sistem Pendinginan Industri</a>
+      </li>
+      <li data-event-value="Heating">
+          <a href="#" title="Pemanasan">Pemanasan</a>
+      </li>
+      <li data-event-value="Load banks">
+          <a href="#" title="Penyewaan Loadbank">Penyewaan Loadbank</a>
+      </li>
+      <li data-event-value="Energy storage">
+          <a href="#" title="Energy storage">Energy storage</a>
+      </li>
+
+              </ul>
+              <ul data-event-key="footerSelected">
+                          <li data-event-value="Sectors">
+          <a href="#" title="Sektor">Sektor</a>
+      </li>
+      <li data-event-value="Solutions">
+          <a href="#" title="Solusi">Solusi</a>
+      </li>
+      <li data-event-value="News">
+          <a href="#" title="Berita">Berita</a>
+      </li>
+
+              </ul>
+              <ul data-event-key="footerSelected">
+                          <li data-event-value="About Us">
+          <a href="/id-id/about-us" title="Tentang Kami">Tentang Kami</a>
+      </li>
+
+                  <li class="footer--social-links">
+                      <ul class="social-links">
+                              <li>
+                                  <a href="https://www.facebook.com/aggrekoglobal/" class="social-links--facebook" rel="noopener noreferrer" target="_blank" aria-label="Facebook" title="Facebook - dibuka di jendela baru">Facebook</a>
+                              </li>
+
+                              <li>
+                                  <a href="https://twitter.com/Aggreko" class="social-links--twitter" title="Twitter - dibuka di jendela baru" aria-label="twitter">Twitter</a>
+                              </li>
+                                                          <li>
+                                  <a href="https://www.linkedin.com/company/aggreko" class="social-links--linkedin" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" title="LinkedIn - dibuka di jendela baru">LinkedIn</a>
+                              </li>
+                                                                                      <li>
+                                  <a href="https://www.youtube.com/user/AggrekoWorldwide" class="social-links--aggreko-media" rel="noopener noreferrer" target="_blank" aria-label="Aggreko Media" title="YouTube - dibuka di jendela baru">YouTube</a>
+                              </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+      <div class="footer--copyright">
+          <div class="container">
+              <p>©Aggreko 2023 </p>
+          </div>
+      </div>
+</footer>
+</body>
+</html>
